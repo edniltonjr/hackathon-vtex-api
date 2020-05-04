@@ -6,4 +6,6 @@ class Product < ApplicationRecord
 	has_many :orders, through: :product_orders
 
 	validates_presence_of :name, :value, :in_stock, :quantity, :comission
+
+	mount_uploader :photo, PhotoUploader
 end

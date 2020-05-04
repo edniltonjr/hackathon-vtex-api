@@ -2,7 +2,7 @@ class Api::V1::OrdersController < ApplicationController
   before_action :set_order, only: [:destroy]
 
   def index
-    @orders = current_user.orders
+    @orders = current_supplier.orders
   end
 
   def create

@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20200502034237) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
-    t.string   "photo"
+    t.json     "photo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -82,7 +82,7 @@ ActiveRecord::Schema.define(version: 20200502034237) do
     t.boolean  "in_stock"
     t.integer  "quantity"
     t.float    "comission",   default: 0.0
-    t.string   "photo"
+    t.json     "photo"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
     t.index ["category_id"], name: "index_products_on_category_id", using: :btree
