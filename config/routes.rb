@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'home#index'
+
   devise_for :suppliers, controllers: { registrations: "suppliers/registrations" }
   devise_for :clients, controllers: { registrations: "clients/registrations" }
   
