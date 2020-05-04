@@ -2,7 +2,7 @@ class Api::V1::AddressesController < ApplicationController
   before_action :set_address, only: [:update, :destroy]
 
   def index
-    @addresses = (current_client.present?) ? current_client.addresses : current_client.addresses
+    @addresses = Address.all
   end
 
   def create
