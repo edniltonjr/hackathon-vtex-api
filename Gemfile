@@ -16,6 +16,7 @@ gem 'rails_admin'
 
 # Uploader
 gem 'carrierwave'
+gem 'mini_magick', '~> 4.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'

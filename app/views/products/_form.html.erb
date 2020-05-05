@@ -1,0 +1,12 @@
+<%= form_for(product) do |f| %>
+
+  <section class="field">
+    Foto da categoria: <br>
+
+    <%= f.file_field :photo %>
+  </section>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
